@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="rana">
+        <h3>Contact Us:</h3>
+        <input type="text" id="uname" placeholder="username"><br><br>
+         <input type="text" id="email" placeholder="your email"><br><br>
+          <input type="text" id="psw" placeholder="your password"><br><br>
+           <input type="text" id="pho" placeholder="your number"><br><br>
+            <input type="text" id="mes" placeholder="message"><br>
+            <h3>Subject:</h3>
+            <label for="checkbox">HTML</label>
+            <input type="checkbox" name="check" id="box">
+            <label for="checkbox">Css</label>
+            <input type="checkbox" name="check" id="box">
+            <label for="checkbox">Javascript</label>
+            <input type="checkbox" name="check" id="box">
+            <label for="checkbox">Other</label>
+            <input type="checkbox" name="check" id="box"><br><br>
+            <button onclick="show()">Submit</button><br><br>
+    </div>
+    <div id="love"></div>
+    <script>
+        function show(){
+            let uname = document.getElementById("uname").value;
+            let email = document.getElementById("email").value;
+            let psw = document.getElementById("psw").value;
+            let pho = document.getElementById("pho").value;
+            let mes = document.getElementById("mes").value;
+            document.getElementById("love").style.display ="block";
+            document.getElementById("love").innerHTML ="username:" + uname
+            + "<br>your email:" + email + "<br>your password:" + psw + "<br>your number:"
+            + pho + "<br>message:" + mes;
+        }
+    </script>
+    <div class="hate">
+       <h1>hashim</h1>
+    </div>
+</body>
+</html>
